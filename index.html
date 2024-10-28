@@ -4,95 +4,102 @@
     <meta charset="UTF-8">    
     <title>Red Pandas</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <!-- Boostrap CDN integration - CSS link -->
+    <!-- Bootstrap CDN integration - CSS link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 </head>
 <body>
+    <!-- Define margins for the webpage -->
     <div class="container m-5">
-    <!-- A grey horizontal navbar that becomes vertical on small screens -->
-<nav class="navbar navbar-expand-sm">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-sm">
+            <!-- Navigation Links -->
+            <ul class="navbar-nav pb-1">
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Sanctuary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">Donate</a>
+                </li>
+            </ul>
+        </nav>
 
-    <!-- Links -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="navbar-brand" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="navbar-brand" href="#">Education</a>
-      </li>
-      <li class="nav-item">
-        <a class="navbar-brand" href="#">Sanctuary</a>
-      </li>
-      <li class="nav-item">
-        <a class="navbar-brand" href="#">Donate</a>
-      </li>
-    </ul>
-  </nav>
+        <!-- A bottom border is added to separate the navigation from the breadcrumbs -->
+        <div class="border-bottom pb-4">
+            <!-- Breadcrumbs for navigation hierarchy -->
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Education</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Sanctuary</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">Donate</a></li>
+                </ol>
+            </nav>
+        </div>
 
-  <!-- Breadcrumbs -->
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><a href="#">Education</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><a href="#">Sanctuary</a></li>
-        <li class="breadcrumb-item active" aria-current="page"><a href="#">Donate</a></li>
-    </ol>
-</nav>
+        <!-- Main header and introductory content -->
+        <h1 class="text-danger fw-bold text-uppercase pt-4">All About Red Pandas</h1>
+        <img src="media/pexels-flickr-146095-main-image.jpg" class="img-fluid rounded" alt="Winking red panda">    
+        <p>These adorable red furry creatures live in the high forests of Asia. Although they are named pandas like the popular giant panda, they are not related. In fact, the red panda isn't a bear, but are in a class of their own - the Ailuridae. Let's take a look at some details about this fascinating animal.</p>
+        <p>All information on this page is sourced from the <a href="https://nationalzoo.si.edu/animals/red-panda">Smithsonian's National Zoo & Conservation Biology Institute.</a></p>
+        <br>
+        <!-- Content sections placed in rows and columns layout-->
+        <div class="row row-cols-1 row-cols-md-2 gy-5 gx-5">
+            <div class="col">
+                <!-- Each content section is futher organized with cards -->
+                <div class="card shadow">
+                    <img src="media/pexels-lum3n-44775-167684-himilayas.jpg" class="card-img-top img-fluid rounded" alt="Himalayan Mountains and Forests">
+                    <div class="card-body">
+                        <h5 class="card-title">Where They Live</h5>
+                        <p class="card-text">Red pandas live in the Himalayas of China across to Nepal, Burma, Tibet, and India high up in forests with mild temperatures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col"> 
+                <div class="card shadow">
+                    <img src="media/pexels-flickr-145970-bamboo.jpg" class="card-img-top img-fluid rounded" alt="Red panda bending a bamboo shoot">
+                    <div class="card-body">
+                        <h5 class="card-title">What They Eat</h5>
+                        <p class="card-text">They eat a diet of 95% bamboo focusing on the nutritious leaf tips and tender shoots.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow">
+                    <img src="media/pexels-flickr-146069-physique.jpg" class="card-img-top img-fluid rounded" alt="Red panda with tail wrapped around body sleeping on a tree branch">
+                    <div class="card-body">
+                        <h5 class="card-title">Their Physique</h5>
+                        <p class="card-text">Red pandas are small in size weighing between 8 and 17 pounds and just over 2 feet long. Their red, black, and beige fur coat has a thick woolly undercoat and provides camouflage. They wrap their long, bushy tails around them like blankets during harsh weather.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col"> 
+                <div class="card shadow">
+                    <img src="media/pexels-213167965-17648462-smile.jpg" class="card-img-top img-fluid rounded" alt="Red panda smiling at camera">
+                    <div class="card-body">
+                        <h5 class="card-title">How They Socialize</h5>
+                        <p class="card-text">They are solo creatures except during mating season. They live in solitude with their home area ranging around 1 square mile.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col"> 
+                <div class="card shadow">
+                    <img src="media/pexels-flickr-146080-rp-couple.jpg" class="card-img-top img-fluid rounded" alt="Two red pandas lying on tree branch">
+                    <div class="card-body">
+                        <h5 class="card-title">How They Breed</h5>
+                        <p class="card-text">From January to March is their breeding season in the Northern Hemisphere while June to April is breeding season in the Southern Hemisphere. It's common for red pandas to have two cubs per litter born between May and July in the Northern Hemisphere. The cubs stay with the mother about a year when they are fully grown.</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
 
-    <h1 class="text-danger fw-bold text-uppercase">All About Red Pandas</h1>
-    <img src="media/pexels-flickr-146095-main-image.jpg" class="img-fluid rounded" alt="winking red panda">    
-    <p>These adorable red furry creatures live in the high forests of Asia. Although they are named pandas like the popular giant panda, they are not related. In fact, the red panda isn't a bear, but are in a class of their own - the Ailuridae. Let's take a look at some details about this fascinating animal.</p>
-    <br>
-    <div class="row row-cols-1 row-cols-md-2 gy-5 gx-5">
-        <div class="col">
-            <div class="card">
-                <img src="media/pexels-lum3n-44775-167684-himilayas.jpg" class="card-img-top img-fluid rounded" alt="Himalayan Mountains and Forests">
-                <div class="card-body">
-                    <h5 class="card-title">Where They Live</h5>
-                    <p class="card-text">Red pandas live in the Himalayas of China across to Nepal, Burma, Tibet, and India high up in forests with mild temperatures.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col"> 
-            <div class="card">
-                <img src="media/pexels-flickr-145970-bamboo.jpg" class="card-img-top img-fluid rounded" alt="Red panda bending a bamboo shoot">
-                <div class="card-body">
-                    <h5 class="card-title">What They Eat</h5>
-                    <p class="card-text">They eat a diet of 95% bamboo focusing on the nutritious leaf tips and tender shoots.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="media/pexels-flickr-146069-physique.jpg" class="card-img-top img-fluid rounded" alt="Red panda with tail wrapped around body sleeping on a tree branch">
-                <div class="card-body">
-                    <h5 class="card-title">Their Physique</h5>
-                    <p class="card-text">Red pandas are small in size weighing between 8 and 17 pounds and just over 2 feet long. Their red, black, and beige fur coat has a thick woolly undercoat and provides camouflage. They wrap their long, bushy tails around them like blankets during harsh weather.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col"> 
-            <div class="card">
-                <img src="media/pexels-213167965-17648462-smile.jpg" class="card-img-top img-fluid rounded" alt="Red panda smiling at camera">
-                <div class="card-body">
-                    <h5 class="card-title">How They Socialize</h5>
-                    <p class="card-text">They are solo creatures except during mating season. They live in solitude with their home area ranging around 1 square mile.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col"> 
-            <div class="card">
-                <img src="media/pexels-flickr-146080-rp-couple.jpg" class="card-img-top img-fluid rounded" alt="Two red pandas lying on tree branch">
-                <div class="card-body">
-                    <h5 class="card-title">How They Breed</h5>
-                    <p class="card-text">From January to March is their breeding season in the Northern Hemisphere while June to April is breeding season in the Southern Hemisphere. It's common for red pandas to have two cubs per litter born between May and July in the Northern Hemisphere. The cubs stay with the mother about a year when they are fully grown.</p>
-                </div>
-            </div>
-        </div>
-    </div>    
-</div>
-    <!-- Boostrap CDN integration - Javascript bundle link -->
+    <!-- Bootstrap CDN integration - JavaScript bundle link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
